@@ -1,0 +1,49 @@
+/* Center everything */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Container width */
+.container {
+  width: 80%;
+  max-width: 600px;
+}
+
+/* Input style */
+input[type="text"] {
+  width: 33.33%;
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  transition: all 0.4s ease;
+  outline: none;
+}
+
+/* On focus: expand input, show blue border, hide placeholder */
+input[type="text"]:focus {
+  width: 100%;
+  border-color: #007BFF;
+}
+
+/* Hide placeholder when focused */
+input[type="text"]:focus::placeholder {
+  color: transparent;
+}
+
+/* Visually hidden label for screen readers only */
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
